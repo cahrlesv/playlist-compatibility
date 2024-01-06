@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="../static/index.css" />
+</head>
+<body>
+    <div class="home">
+        <img class="hero" src="../static/images/hero2.png" />
+    </div>
+    <div class="section">
+        <h1>About</h1>
+        <div id="about" class="content">
+            <img id="stick" src="../static/images/stick.JPG" alt="stick--figures"/>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</h3>
+        </div>
+    </div>
+    <div class="compatibility-test">
+        <div class='section' id='input'>
+            <h1>Compatibility Test</h1>
+            <h3>Input the URLs for two playlists!</h3>
+            <div class="content">
+                <form class='inputForm' method="POST">
+                    <div id="fields">
+                        <input
+                            type="text"
+                            id="playlist1"
+                            name="playlist1"
+                            placeholder="Enter Playlist URL"
+                            value=""
+                        />
+                        <input
+                            type="text"
+                            id="playlist2"
+                            name="playlist2"
+                            placeholder="Enter Playlist URL"
+                            value=""
+                        />
+                    </div>
+                    <input
+                        type="submit"
+                        id="submitButton"
+                        value="Submit"
+                    />
+                </form>
+            </div>
+        </div>
+        <div class="section" id="results">
+            <div class='content'>
+                <!-- Display the compatibility result sent from the server -->
+                <h3>{{ compatibility }}</h3>
+                <img src="../static/images/meter.png" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
